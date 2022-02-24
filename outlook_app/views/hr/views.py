@@ -64,7 +64,7 @@ class AllApplicants(View):
             mail_subject = f'Interview Schedule for {applicantDetails.job.title}'
             mail_msg = 'Important mail'
             html_content = f'<p>Dear <strong>{applicantDetails.name}</strong>,<br><br>Hope you are doing great.<br><br>Your Interview has been scheduled with {applicantDetails.interviewer.get_full_name()} on {applicantDetails.interview_time} for the position of {applicantDetails.job.title}.<br><br>You are requested to give quiz before your interview.<br><br> Quiz link: <a href="{applicantDetails.job.mcqs_link}">{applicantDetails.job.title} Quiz</a></p>'
-            msg = EmailMultiAlternatives(mail_subject, mail_msg, 'outlook360ssuet@gmail.com', [applicantDetails.email])
+            msg = EmailMultiAlternatives(mail_subject, mail_msg, '', [applicantDetails.email])
             msg.attach_alternative(html_content, "text/html")
             msg.send()
         except:

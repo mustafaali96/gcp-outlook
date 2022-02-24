@@ -27,10 +27,10 @@ LOGOUT_REDIRECT_URL = reverse_lazy('login_url')
 
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey'
-EMAIL_HOST_PASSWORD = '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'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'outlook360ssuet@gmail.com'
+DEFAULT_FROM_EMAIL = ''
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -41,7 +41,7 @@ SECRET_KEY = '!b4so+4b^)v-0w7z+s=gn0bw+y!3ybmeij6ck+#$%oe$d!h^5+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['outlook360.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 

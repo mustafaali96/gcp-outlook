@@ -235,7 +235,6 @@
                                         <th>Job</th>
                                         <th>Education</th>
                                         <th>Experience</th>
-                                        <th>Quiz Score</th>
                                         <th>Recommendadtion</th>
                                     </tr>
                                 </thead>
@@ -248,18 +247,6 @@
                                         <td>{{ applicant.job.title }}</td>
                                         <td>{{ applicant.get_education_display }}</td>
                                         <td>{{ applicant.experience }} Years</td>
-                                        
-                                        {% if applicant.mcqsScore == -1.0 %}
-                                            <form method="post">
-                                            {% csrf_token %}
-                                            <td>
-                                                <input id="applicantId" type="text" name="applicantId" value="{{ applicant.id }}" hidden>
-                                                <button type="submit" class="btn btn-outline-warning btn-sm" >Send Quiz Mail</button>
-                                            </td>
-                                            </form>
-                                        {% else %}
-                                            <td>{{applicant.mcqsScore}}</td>
-                                        {% endif %}
 
                                         {% if applicant.recommendadtion and applicant.remarks %}
                                             <td>{{applicant.recommendadtion}}</td>
