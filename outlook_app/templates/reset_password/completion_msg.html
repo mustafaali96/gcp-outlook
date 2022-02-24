@@ -1,0 +1,15 @@
+
+{% load static %}
+
+<title>Password Changed Successfully</title>
+
+<body style="background-color: black;">
+    <div class="page-wrapper" style="height: 100%">
+        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;height: 100%;">
+            <img class="img-fluid bg-center" style="max-width: 40%;max-height: 40%;" src="{% static 'assets/images/email/password_change.png' %}">
+            <h1 style="font-weight: 600;color: #FBDF36;font-family:sans-serif;margin: 0px;margin-top: 20px;">Password Changed Successfully!</h1>
+            <p style="color: rgb(212, 212, 212);font-family:sans-serif;margin: 0px;margin-top: 5px;font-size: 18px;">Click below to sign in!</p> 
+            <a href="{% url 'login_url' %}" style="margin-top: 10px;color: rgb(133, 133, 216);"><i data-feather="log-in"> </i><span>Back to Sign in</span></a>                        
+        </div>
+    </div>
+</body>

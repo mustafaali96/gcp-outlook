@@ -1,0 +1,186 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Flexy lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Flexy admin lite design, Flexy admin lite dashboard bootstrap 5 dashboard template">
+    <meta name="description"
+        content="Flexy Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Applicant Form - {{ job.title }}</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon.png' %}">
+    <!-- Custom CSS -->
+    <link href="{% static 'assets/dist/css/style.min.css' %}" rel="stylesheet">
+    <!-- Bootstrap v5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EVMVFV1LS7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EVMVFV1LS7');
+    </script>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+
+
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+            <!-- ============================================================== -->
+            <!-- Start Page Content -->
+            <!-- ============================================================== -->
+
+            <div class="row">
+                <h1 class="mb-0 fw-bold">{{ job.title }} - Applicant Form</h1> 
+
+                <form method="post" class="row g-3" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <label for="{{ applicant_form.name.name }}" class="form-label">Applicant Name</label>
+                        <input type="text" class="form-control" id="id_{{ applicant_form.name.name }}" name="{{ applicant_form.name.name }}" placeholder="Enter Name" required>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <label for="{{ applicant_form.email.name }}" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="id_{{ applicant_form.email.name }}" name="{{ applicant_form.email.name }}" required placeholder="Enter email address">
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <label for="{{ applicant_form.contact.name }}" class="form-label">Cell #</label>
+                        <input type="tel" class="form-control" id="id_{{ applicant_form.contact.name }}" name="{{ applicant_form.contact.name }}" placeholder="Enter cell #" pattern="[0-9]{4}[0-9]{7}">
+                    </div>
+                    <label style="display: none" type="hidden" for="id_{{ applicant_form.job.name }}" class="form-label"><b>Job</b></label>
+                        <select style="display: none" name="{{ applicant_form.job.name }}" required id="id_{{ applicant_form.job.name }}">
+                            <option value="{{job.id}}">---------</option>
+                        </select>
+                    <div class="col-sm-12 col-md-2 col-lg-2">
+                        <label for="{{ applicant_form.experience.name }}" class="form-label">Experience</label>
+                        <input type="number" class="form-control" id="id_{{ applicant_form.experience.name }}" name="{{ applicant_form.experience.name }}" required placeholder="Experience in years" min="0" max="25">
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <label for="{{ applicant_form.education.name }}" class="form-label"><b>Your Education</b></label>
+                        <select name="{{ applicant_form.education.name }}" id="id_{{ applicant_form.education.name }}" class="form-select mb-3" aria-label=".form-select-lg example" required>
+                            <!-- <option selected>What should be education level?</option> -->
+                            <!-- Take this in loop -->
+                            {% for education in applicant_form.education %}
+                                {{education}}
+                            {% endfor %}
+                            <!-- Take this in loop -->
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <label for="{{ applicant_form.cv.name }}" class="form-label">Upload Resume</label>
+                        <!-- {{ applicant_form.cv }} -->
+                        <input class="form-control" type="file" accept=".doc,.docx,.pdf" id="id_{{ applicant_form.cv.name }}" name="{{ applicant_form.cv.name }}">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <label for="{{applicant_form.applicant_experties.name}}" class="form-label"><b>Experties</b></label>
+                            <div class="row">
+                                <!-- Take this in Loop for experties Start -->
+                                <select name="applicant_experties" id="id_applicant_experties" multiple>
+                                    {% for expertie in experties %}
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <option type="checkbox" class="form-check-input" value="{{expertie.id}}">&nbsp&nbsp&nbsp&nbsp{{expertie.experties}}</option>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </select>
+                                <!-- Take this in Loop for experties End -->
+                            </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End PAge Content -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Right sidebar -->
+            <!-- ============================================================== -->
+            <!-- .right-sidebar -->
+            <!-- ============================================================== -->
+            <!-- End Right sidebar -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Container fluid  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <footer class="footer text-center">
+            &copy; CopyRight 2021 <b>- Outlook 360&trade;</b>
+        </footer>
+        <!-- ============================================================== -->
+        <!-- End footer -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+        <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="{% static 'assets/libs/jquery/dist/jquery.min.js' %}"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/dist/js/app-style-switcher.js' %}"></script>
+    <!--Wave Effects -->
+    <script src="{% static 'assets/dist/js/waves.js' %}"></script>
+    <!--Menu sidebar -->
+    <script src="{% static 'assets/dist/js/sidebarmenu.js' %}"></script>
+    <!--Custom JavaScript -->
+    <script src="{% static 'assets/dist/js/custom.js' %}"></script>
+
+
+</body>
+
+</html>

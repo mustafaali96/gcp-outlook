@@ -1,0 +1,9 @@
+terminal:
+heroku login
+heroku config:set DISABLE_COLLECTSTATIC=1
+
+after deployment
+heroku run python manage.py migrate -a outlook360
+
+To Create User
+heroku run python manage.py createsuperuser -a outlook360

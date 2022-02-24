@@ -1,0 +1,921 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- ==============================================
+        Basic Page Needs
+        =============================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+
+        <title>Outlook 360 - Home</title>
+
+        <!-- ==============================================
+        Favicons
+        =============================================== -->
+        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon.png' %}">
+        <link rel="apple-touch-icon" href="{% static 'assets/home/images/apple-touch-icon.png' %}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/home/images/apple-touch-icon-72x72.png' %}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/home/images/apple-touch-icon-114x114.png' %}">
+
+        <!-- ==============================================
+        Vendor Stylesheet
+        =============================================== -->
+        <link rel="stylesheet" href="{% static 'assets/home/css/vendor/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/home/css/vendor/slider.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/home/css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/home/css/vendor/icons.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/home/css/vendor/icons-fa.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/home/css/vendor/animation.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/home/css/vendor/gallery.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/home/css/vendor/cookie-notice.min.css' %}">
+
+        <!-- ==============================================
+        Custom Stylesheet
+        =============================================== -->
+        <link rel="stylesheet" href="{% static 'assets/home/css/default.css' %}">
+
+        <!-- ==============================================
+        Theme Color
+        =============================================== -->
+        <meta name="theme-color" content="#21333e">
+
+        <!-- ==============================================
+        Theme Settings
+        =============================================== -->
+        <style>
+            :root {
+                --header-bg-color: #f9f9f9;
+                --nav-item-color: #21333e;
+                --hero-bg-color: #f9f9f9;
+                
+                --section-1-bg-color: #eef4ed;
+                --section-2-bg-color: #111117;
+                --section-3-bg-color: #ffffff;
+                --section-4-bg-color: #111117; --section-4-bg-image: url(static '/assets/home/images/bg-7.jpg');
+                --section-5-bg-color: #111117;
+                --section-6-bg-color: #ffffff;
+
+                --footer-bg-color: #111117;
+            }
+        </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EVMVFV1LS7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EVMVFV1LS7');
+    </script>
+        
+    </head>
+
+    <body class="home">
+        
+        <!-- Preloader -->
+        <div id="preloader" data-timeout="2000" class="odd preloader counter">
+            <div data-aos="fade-up" data-aos-delay="500" class="row justify-content-center text-center items">
+                <div data-percent="100" class="radial">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+
+            <!-- Top Navbar -->
+            <nav class="navbar navbar-expand top">
+                <div class="container header">
+
+                    <!-- Navbar Items [left] -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link pl-0"><i class="fas fa-clock mr-2"></i>Open Hours: Mon - Fri - 9:00pm - 9:00pm</a>
+                        </li>
+                    </ul>
+
+                    <!-- Nav holder -->
+                    <div class="ml-auto"></div>
+
+                    <!-- Navbar Items [right] -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-phone-alt mr-2"></i>3032635434</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-envelope mr-2"></i>outlook360ssuet@gmail.com</a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar Icons -->
+                    <ul class="navbar-nav icons">
+                        <li class="nav-item social">
+                            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item social">
+                            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item social">
+                            <a href="#" class="nav-link pr-0"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand navbar-fixed sub">
+                <div class="container header">
+
+                    <!-- Navbar Brand-->
+                    <a class="navbar-brand light" href="/">
+                        <span class="brand">
+                            <span class="featured">
+                                <span class="first">OUTLOOK</span>
+                            </span>
+                            <span class="last">360</span>
+                        </span>
+                        
+                        <!-- 
+                            Custom Logo
+                            <img src="{% static 'assets/home/images/logo.svg" alt="NEXGEN">
+                        -->
+                    </a>
+
+                    <!-- Nav holder -->
+                    <div class="ml-auto"></div>
+
+                    <!-- Navbar Items -->
+                    <ul class="navbar-nav items">
+                        <li class="nav-item">
+                            <a href="#header" class="smooth-anchor nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="smooth-anchor nav-link">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="smooth-anchor nav-link">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="smooth-anchor nav-link">JOBS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#funfacts" class="smooth-anchor nav-link">RESULTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="smooth-anchor nav-link">GET IN TOUCH</a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar Toggle -->
+                    <ul class="navbar-nav toggle">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#menu">
+                                <i class="icon-menu m-0"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar Action -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item ml-3">
+                            <a href="{% url 'login_url' %}" class="btn ml-lg-auto primary-button">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- Hero -->
+        <section id="slider" class="hero p-0">
+            <div class="swiper-container full-slider animation slider-h-100 slider-h-auto">
+
+                <!-- Particles -->
+                <div id="particles-1" class="full-image" data-mask="50"></div>     
+                
+                <!-- Media -->
+                <div class="parallax-x-bg" style="background-image:url(../../static/assets/home/images/bg-parallax.webp)" data-swiper-parallax="-50%"></div>
+
+                <div class="swiper-wrapper">
+
+                    <!-- Item 1 -->
+                    <div class="swiper-slide slide-center">
+
+                        <div class="slide-content row">
+                            <div class="col-12 d-flex justify-content-start inner">
+                                <div class="left text-left">
+
+                                    <!-- Content -->
+                                    <h1 data-aos="zoom-in" data-aos-delay="2000" class="title effect-static-text">In a War <br><span class="featured"><span>For Talent</span></span></h1>
+                                    <p data-aos="zoom-in" data-aos-delay="2400" class="description">Escape the comfort zone and achieve better results with the help of experts who understand the subject.</p>
+
+                                    <!-- Action -->
+                                    <div data-aos="fade-up" data-aos-delay="2800" class="buttons">
+                                        <div class="d-sm-inline-flex">
+                                            <a href="#contact" class="smooth-anchor mt-4 btn primary-button">GET IN TOUCH</a>
+                                            <a href="#services" class="smooth-anchor ml-sm-4 mt-4 btn outline-button">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="swiper-slide slide-center">
+                        <div class="slide-content row">
+                            <div class="col-12 d-flex justify-content-start justify-content-md-center inner">
+                                <div class="center text-left text-md-center">
+
+                                    <!-- Content -->
+                                    <h2 data-aos="zoom-in" data-aos-delay="2000" class="title effect-static-text">Faster <span class="featured"><span>Results</span></span></h2>
+                                    <p data-aos="zoom-in" data-aos-delay="800" class="description smaller mr-auto ml-auto">No matter the number of applicants applying, we will be ready to score down them in the best possible ways.</p>
+                                   
+                                    <!-- Action -->
+                                    <div data-aos="fade-up" data-aos-delay="1200" class="buttons">
+                                        <div class="d-sm-inline-flex">
+                                            <a href="#contact" class="smooth-anchor mt-4 btn primary-button">GET IN TOUCH</a>
+                                            <a href="#services" class="smooth-anchor ml-sm-4 mt-4 btn outline-button">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="swiper-slide slide-center">
+                        <div class="slide-content row">
+                            <div class="col-12 d-flex justify-content-start justify-content-md-end inner">
+                                <div class="right text-left">
+
+                                    <!-- Content -->
+                                    <h2 data-aos="zoom-in" data-aos-delay="400" class="title effect-static-text">Reach Out<br><span class="featured"><span>Today</span></span></h2>
+                                    <p data-aos="zoom-in" data-aos-delay="800" class="description">Do not miss the opportunity to achieve better results via e-recuitment by outlook-360.</p>
+
+                                    <!-- Action -->
+                                    <div data-aos="fade-up" data-aos-delay="1200" class="buttons">
+                                        <div class="d-sm-inline-flex">
+                                            <a href="#contact" class="smooth-anchor mt-4 btn primary-button">GET IN TOUCH</a>
+                                            <a href="#services" class="smooth-anchor ml-sm-4 mt-4 btn outline-button">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="section-1 offers featured">
+            <div class="container">
+                <div class="row intro">
+                    <div class="col-12 col-md-9 align-self-center text-center text-md-left">
+                        <span class="pre-title m-auto ml-md-0">We provide you with</span>
+                        <h2>Excellent <span class="featured"><span>Services</span></span></h2>
+                        <p>We are leaders in providing electronic recruitment services with a set of cutting-edge, AI technologies, with a team of experienced and renowned professionals. We provide you the following services.</p>
+                    </div>
+                    <div class="col-12 col-md-3 align-self-end">
+                        <a href="#" class="btn mx-auto mr-md-0 ml-md-auto primary-button">SEE ALL</a>
+                    </div>
+                </div>
+                <div class="row justify-content-center items">
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="card">
+                            <i class="icon icon-organization"></i>
+                            <h4>Job Advertisement</h4>
+                            <p>Have your job ads posted on the Outlook-360 platform.</p>
+                            <a href="#"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="card">
+                            <i class="icon icon-briefcase"></i>
+                            <h4>CV Collection</h4>
+                            <p>We also store CV copies of all applicants.</p>
+                            <a href="#"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="card">
+                            <i class="icon icon-chart"></i>
+                            <h4>AI Based Scoring</h4>
+                            <p>We score down applicants for you using AI.</p>
+                            <a href="#"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="card">
+                            <i class="icon icon-plane"></i>
+                            <h4>Onboarding</h4>
+                            <p>Get your final selected applicant for the vacancy.</p>
+                            <a href="#"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="card">
+                            <i class="icon icon-globe-alt"></i>
+                            <h4>Interview Scheduling</h4>
+                            <p>Our application lets you schedule interviews.</p>
+                            <a href="#"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="card">
+                            <i class="icon icon-drawer"></i>
+                            <h4>Apptitude Tests</h4>
+                            <p>Ask your applicants to attemp a quick apptitud Test.</p>
+                            <a href="#"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section-2 odd highlights image-right featured">
+            <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 pr-md-5 align-self-center text-center text-md-left text">
+                    <div data-aos="fade-up"  class="row intro">
+                        <div class="col-12 p-0">
+                            <span class="pre-title m-auto m-md-0">About the project</span>
+                            <h2><span class="featured"><span>The</span></span> Outlook-360</h2>
+                            <p>We have developed this application to help companies speed up prolonged applicant recruitment procedure.</p>
+                        </div>
+                    </div>
+                    <div class="row items">                             
+                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 pr-md-4 item">
+                            <h4><i class="mr-2 icon-badge"></i>Tradition</h4>
+                            <p>To minimize recruitment time and costs.</p>
+                        </div>           
+                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 item">
+                            <h4><i class="mr-2 icon-lock"></i>Accuracy</h4>
+                            <p>We provide accurate results with AI Algorithms.</p>
+                        </div> 
+                    </div>
+                    <div class="row items"> 
+                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 item">
+                            <h4><i class="mr-2 icon-note"></i>Emailing</h4>
+                            <p>We help you email from our platform to applicants.</p>
+                        </div>  
+                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 pr-md-4 item">
+                            <h4><i class="mr-2 icon-graduation"></i>Expertise</h4>
+                            <p>We infuse e-recruitment with advanced ammendments.</p>
+                        </div>
+                    </div>
+
+                    <!-- Action -->
+                    <div data-aos="fade-up" class="buttons">
+                        <div class="d-sm-inline-flex mb-5 mb-md-0">
+                            <a href="#contact" class="smooth-anchor mx-auto mt-4 btn primary-button">GET IN TOUCH</a>
+                            <a href="#" class="mx-auto ml-sm-4 mt-4 btn outline-button">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-0 image">
+                    <img src="{% static 'assets/home/images/about-4.jpg' %}" class="fit-image" alt="Fit Image">
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section-3 showcase blog-grid filter-section projects">
+            <div class="overflow-holder">
+                <div class="container">
+                    <div class="row text-center intro">
+                        <div class="col-12">
+                            <span class="pre-title">Applying for Job just got easier..</span>
+                            <h2 class="mb-0">Job <span class="featured"><span>Opportunities</span></span></h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn active">
+                                    <input type="radio" value="all" checked class="btn-filter-item">
+                                    <span>All</span>
+                                </label>
+                                {% for experties in all_experties %}
+                                <label class="btn">
+                                    <input type="radio" value="{{experties}}" class="btn-filter-item">
+                                    <span>{{ experties }}</span>
+                                </label>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="row items filter-items">       
+                        {% for job in jobs %}          
+                            <div class="col-12 col-md-6 col-lg-4 item filter-item" data-groups='[{% for exp in job.job_experties %}"{{exp}}",{% endfor %}"str"]'>
+                                <div class="row card p-0 text-center">
+                                    <div class="image-over">
+                                        <img src="{% static 'assets/home/images/job.jpg' %}">
+                                    </div>
+                                    <div class="card-caption col-12 p-0">
+                                        <div class="card-body">
+                                            <a href="{% url 'job' job_id=job.id %}">
+                                                <h4>{{ job.title }}</h4>
+                                                <h6>Experience: {{ job.experience }}</h6>
+                                                <p>Experties: |{% for experties in job.job_experties %} {{ experties }} | {% endfor %}</p>
+                                                <p>{{ job.description }}</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="{% url 'job' job_id=job.id %}"><i class="btn-icon fas fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        {% endfor %}   
+                        <div class="col-1 filter-sizer"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun Facts -->
+        <section id="funfacts" class="section-4 odd counter funfacts">
+            <div class="container">
+                <div class="row mb-md-5 text-center">
+                    <div class="col-12">
+                        <span class="pre-title">Whom We Do Serve</span>
+                        <h2><span class="featured"><span>Results</span></span> in Numbers</h2>
+                    </div>
+                </div>
+                <div data-aos-id="counter" data-aos="fade-up" data-aos-delay="200" class="row justify-content-center text-center items">
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div data-percent="10" class="radial">
+                            <span></span>
+                        </div>
+                        <h4>Jobs Posted</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div data-percent="26" class="radial">
+                            <span></span>
+                        </div>
+                        <h4>People Applying</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div data-percent="7" class="radial">
+                            <span></span>
+                        </div>
+                        <h4>Applicants Selected</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div data-percent="0" class="radial">
+                            <span></span>
+                        </div>
+                        <h4>Companies Using</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners -->
+        <section id="partners" class="section-5 odd partners">
+            <div class="overflow-holder">
+                <div class="container">
+                    <div class="swiper-container min-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-center item">
+                                <img src="{% static 'assets/home/images/logo-1.png' %}" class="fit-image" alt="Fit Image">
+                            </div>
+                            <div class="swiper-slide slide-center item">
+                                <img src="{% static 'assets/home/images/logo-2.png' %}" class="fit-image" alt="Fit Image">
+                            </div>
+                            <div class="swiper-slide slide-center item">
+                                <img src="{% static 'assets/home/images/logo-3.png' %}" class="fit-image" alt="Fit Image">
+                            </div>
+                            <div class="swiper-slide slide-center item">
+                                <img src="{% static 'assets/home/images/logo-4.png' %}" class="fit-image" alt="Fit Image">
+                            </div>
+                            <div class="swiper-slide slide-center item">
+                                <img src="{% static 'assets/home/images/logo-5.png' %}" class="fit-image" alt="Fit Image">
+                            </div>
+                            <div class="swiper-slide slide-center item">
+                                <img src="{% static 'assets/home/images/logo-1.png' %}" class="fit-image" alt="Fit Image">
+                            </div>
+                            <div class="swiper-slide slide-center item">
+                                <img src="{% static 'assets/home/images/logo-2.png' %}" class="fit-image" alt="Fit Image">
+                            </div>
+                            <div class="swiper-slide slide-center item">
+                                <img src="{% static 'assets/home/images/logo-3.png' %}" class="fit-image" alt="Fit Image">
+                            </div>
+                            <div class="swiper-slide slide-center item">
+                                <img src="{% static 'assets/home/images/logo-4.png' %}" class="fit-image" alt="Fit Image">
+                            </div>
+                            <div class="swiper-slide slide-center item">
+                                <img src="{% static 'assets/home/images/logo-5.png' %}" class="fit-image" alt="Fit Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section-6 form contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 pr-md-5 align-self-center text">
+                        <div class="row intro">
+                            <div class="col-12 p-0">
+                                <span class="pre-title m-0">Send a message</span>
+                                <h2>Get in <span class="featured"><span>Touch</span></span></h2>
+                                <p>We will respond to your message as soon as possible.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <form action="#" id="nexgen-simple-form" class="nexgen-simple-form">
+                                    <input type="hidden" name="section" value="nexgen_form">
+
+                                    <input type="hidden" name="reCAPTCHA">
+                                    <!-- Remove this field if you want to disable recaptcha -->
+
+                                    <div class="row form-group-margin">
+                                        <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                            <input type="text" name="name" class="form-control field-name" placeholder="Name">
+                                        </div>
+                                        <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                            <input type="email" name="email" class="form-control field-email" placeholder="Email">
+                                        </div>
+                                        <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                            <input type="text" name="phone" class="form-control field-phone" placeholder="Phone">
+                                        </div>
+                                        <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                            <i class="icon-arrow-down mr-3"></i>
+                                            <select name="info" class="form-control field-info">
+                                                <option value="" selected disabled>More Info</option>
+                                                <option>Job Advertisement</option>
+                                                <option>CV Collection</option>
+                                                <option>AI Based Scoring</option>
+                                                <option>Onboarding</option>
+                                                <option>Interview Scheduling</option>
+                                                <option>Apptitude Tests</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 m-0 p-2 input-group">
+                                            <textarea name="message" class="form-control field-message" placeholder="Message"></textarea>
+                                        </div>
+                                        <div class="col-12 col-12 m-0 p-2 input-group">
+                                            <span class="form-alert"></span>
+                                        </div>
+                                        <div class="col-12 input-group m-0 p-2">
+                                            <a class="btn primary-button">SEND</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="contacts">
+                            <h4>Outlook-360</h4>
+                            <p>We have worked really hard to let you have ease at hiring.</p>
+                            <p>Contact Us Today to have it implemented at your end too.</p>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-phone-alt mr-2"></i>
+                                        03032635434
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-envelope mr-2"></i>
+                                        outlook360ssuet@gmail.com
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-map-marker-alt mr-2"></i>
+                                        Sir Syed University of Engineering and Technology, ST-16 University Rd, Block 5 Gulshan-e-Iqbal, Karachi, Karachi City, Sindh
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="mt-2 btn outline-button" data-toggle="modal" data-target="#map">VIEW MAP</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+
+            <!-- Footer [content] -->
+            <section id="footer" class="odd footer offers">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 footer-left">
+
+                            <!-- Navbar Brand-->
+                            <a class="navbar-brand" href="/">
+                                <span class="brand">
+                                    <span class="featured">
+                                        <span class="first">OUTLOOK</span>
+                                    </span>
+                                    <span class="last">360</span>
+                                </span>
+                                
+                                <!-- 
+                                    Custom Logo
+                                    <img src="{% static 'assets/home/images/logo.svg" alt="NEXGEN">
+                                -->
+                            </a>
+                            <p>An AI based web application <br>for faster e-recruitment.</p>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-phone-alt mr-2"></i>
+                                        03032635434
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-envelope mr-2"></i>
+                                        outlook360ssuet@gmail.com
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-map-marker-alt mr-2"></i>
+                                        Sir Syed University of Engineering and Technology, ST-16 University Rd, Block 5 Gulshan-e-Iqbal, Karachi, Karachi City, Sindh
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#contact" class="mt-4 btn outline-button smooth-anchor">GET IN TOUCH</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-9 p-0 footer-right">
+                            <div class="row items">
+                                <div class="col-12 col-lg-4 item">
+                                    <div class="card">
+                                        <h4>About</h4>
+                                        <a href="#"><i class="icon-arrow-right"></i>Project</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>Services</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>Tradition</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>Innovation</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>Environment</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>Technology</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 item">
+                                    <div class="card">
+                                        <h4>Services</h4>
+                                        <a href="#"><i class="icon-arrow-right"></i>Job Advertisement</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>CV Collection</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>AI Based Scoring</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>Onboarding</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>Interview Scheduling</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>Apptitude Test</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 item">
+                                    <div class="card">
+                                        <h4>Support</h4>
+                                        <a href="#"><i class="icon-arrow-right"></i>Responsibility</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>Terms of Use</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>About Cookies</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>Privacy Policy</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>Accessibility</a>
+                                        <a href="#"><i class="icon-arrow-right"></i>Information</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Copyright -->
+            <section id="copyright" class="p-3 odd copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-3 text-center text-lg-left">
+                            <p>Final Year Project.</p>
+                            <!--
+                                Suggestion: Replace the text above with a description of your website.
+                             -->
+                        </div>
+                        <div class="col-12 col-md-6 p-3 text-center text-lg-right">
+                            <p>© 2021 <a href="https://outlook360.herokuapp.com/" target="_blank">Outlook - 360</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </footer>
+
+        <!-- Modal [search] -->
+        <div id="search" class="p-0 modal fade" role="dialog" aria-labelledby="search" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+                <div class="modal-content full">
+                    <div class="modal-header" data-dismiss="modal">
+                        <i class="icon-close fas fa-arrow-right"></i>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row">
+                            <div class="col-12 p-0 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 p-0">
+                                        <h2>What are you looking for?</h2>
+                                        <div class="badges">
+                                            <span class="badge"><a href="#">Consulting</a></span>
+                                            <span class="badge"><a href="#">Audit</a></span>
+                                            <span class="badge"><a href="#">Assurance</a></span>
+                                            <span class="badge"><a href="#">Advisory</a></span>
+                                            <span class="badge"><a href="#">Financial</a></span>
+                                            <span class="badge"><a href="#">Capital Markets</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="text" class="form-control" placeholder="Enter Keywords">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0 input-group align-self-center">
+                                        <button class="btn primary-button">SEARCH</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal [sign] -->
+        <div id="sign" class="p-0 modal fade" role="dialog" aria-labelledby="sign" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+                <div class="modal-content full">
+                    <div class="modal-header" data-dismiss="modal">
+                        <i class="icon-close fas fa-arrow-right"></i>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/" class="row">
+                            <div class="col-12 p-0 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 p-0 pb-3">
+                                        <h2>Sign In</h2>
+                                        <p>Don't have an account? <a href="#" class="primary-color" data-toggle="modal" data-target="#register">Register now</a>.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="password" class="form-control" placeholder="Password" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0 input-group align-self-center">
+                                        <button class="btn primary-button">SIGN IN</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal [register] -->
+        <div id="register" class="p-0 modal fade" role="dialog" aria-labelledby="register" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+                <div class="modal-content full">
+                    <div class="modal-header" data-dismiss="modal">
+                        <i class="icon-close fas fa-arrow-right"></i>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/" class="row">
+                            <div class="col-12 p-0 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 p-0 pb-3">
+                                        <h2>Register</h2>
+                                        <p>Have an account? <a href="#" class="primary-color" data-toggle="modal" data-target="#sign">Sign In</a>.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="text" class="form-control" placeholder="Name" required>
+                                    </div>
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="password" class="form-control" placeholder="Password" required>
+                                    </div>
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="password" class="form-control" placeholder="Confirm Password" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0 input-group align-self-center">
+                                        <button class="btn primary-button">REGISTER</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal [map] -->
+        <div id="map" class="p-0 modal fade" role="dialog" aria-labelledby="map" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+                <div class="modal-content full">
+                    <div class="modal-header absolute" data-dismiss="modal">
+                        <i class="icon-close fas fa-arrow-right"></i>
+                    </div>
+                    <div class="modal-body p-0">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.123073808986!2d12.490042215441486!3d41.89021017922119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColiseu!5e0!3m2!1spt-BR!2sbr!4v1594148229878!5m2!1spt-BR!2sbr" width="600" height="450" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal [responsive menu] -->
+        <div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+                <div class="modal-content full">
+                    <div class="modal-header" data-dismiss="modal">
+                        <i class="icon-close fas fa-arrow-right"></i>
+                    </div>
+                    <div class="menu modal-body">
+                        <div class="row w-100">
+                            <div class="items p-0 col-12 text-center">
+                                <!-- Append [navbar] -->
+                            </div>
+                            <div class="contacts p-0 col-12 text-center">
+                                <!-- Append [navbar] -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll [to top] -->
+        <div id="scroll-to-top" class="scroll-to-top">
+            <a href="#header" class="smooth-anchor">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>        
+        
+        <!-- ==============================================
+        Google reCAPTCHA // Put your site key here
+        =============================================== -->
+        <script src="https://www.google.com/recaptcha/api.js?render=6Lf-NwEVAAAAAPo_wwOYxFW18D9_EKvwxJxeyUx7"></script>
+
+        <!-- ==============================================
+        Vendor Scripts
+        =============================================== -->
+        <script src="{% static 'assets/home/js/vendor/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/jquery.easing.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/jquery.inview.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/popper.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/bootstrap.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/ponyfill.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/slider.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/animation.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/progress-radial.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/bricklayer.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/gallery.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/shuffle.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/cookie-notice.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/vendor/particles.min.js' %}"></script>
+        <script src="{% static 'assets/home/js/main.js' %}"></script>
+        
+        <!-- ==============================================
+        Particles
+        =============================================== -->
+        <script>
+            particles('squares', 'particles-1');
+        </script>
+
+    </body>
+</html>

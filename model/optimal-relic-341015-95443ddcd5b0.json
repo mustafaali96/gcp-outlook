@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "optimal-relic-341015",
+  "private_key_id": "95443ddcd5b0445563a32bcfc961fba0f6238f97",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDPKPbcDCRwUcmr\nmpiJNeilID/MYjwJX0GFupx9Bl/qCIKyH1Q8cmLddxw2bKD8iHSLvFeJSgrwKh9X\nE/1i4G20steBEoyTw0VkWudu55+fmy+kocuy/9MO6M5VWZpt1D6xj163sJovIW2M\n1FqLqObnZ8IIgoWBlWggkdf0q++Mk8fKGZfhyMnmaktP1MGVyshu356fm/bthZz5\nhL0biPA5mbIuAm+8aZMzIHi9YGRKUyqDRghVqAEK0Tausvr2dWmQjPKReMnrTdA5\n1M+SNtGaKSL34a5ko2YbB2Ouj0X3Oagb0LO6H1lLS/K+4oe5q3bJmaj6y5pwqrAp\nG/m4xb1XAgMBAAECggEAODwwCxr2t1DUdJOCbdjm/xBKkVJnZsnncQRv35af6dmG\nlRDhHomUofbn/zQs3XCzZo1pm9iwMHLW0B4ajkFLNp7H1n9xDtmW2D+/DIGu+LY5\nUDElqUE+C5GSFWQ+Ait4G15GgYncyQeDhBPPQpNGnzGw3/uCf2NOAW1l2MLlw9yK\n8gqpG0r3ipxtZ++ZAVrSROQ2p9O16cFmADbuFY2f3TpQSySanX0X62lDq7yoEI7s\nDxFCt/twLrpeTUFIeclV+xID03eSjSFVueefS8kqbRrfVPJTFtDejnEN2duxEb8c\n4cicFoLNL/vrnL0ONZtatIatR7lhbImEtETt8fahMQKBgQDsBBH0jIouHDF4GPyg\n3J4w42X0c0NPfxCqJz97CdMcAo/Iy754jzECFv8E9or06qa2KCaWR9f4dCKBUSUL\n/wiCGsazu2MeJit8N4xc+r4QfnW5Sem/vTTQGDxJrccMtSDY0M9wVeFZnXUwcFnM\ncdyQedgT4PPvnAhY8TGxd4L+JwKBgQDgs2h0/drXBiX5a72hSe/k+QY5ATyXNSNe\nnsVSd2u+qU4GZrwm3N+Ayrm5ECbY/4z2Ad+QxcECIebvkBUoSXE1w1IQgkX2aemG\n4Vje3kqJ63gtst2tftT/1Av826RFpDQKV7YOrFQ4hX7uGXvrFKxpBapRKyh8JPcq\nHfCYoyj1UQKBgHYnX3nG9dI5qQZPtAEwET22Sa9EGNluakBUn7IP7BDks2i5nyQp\nw0Yhjw/EATK1WjptBUxMsTEfqrqEjgBgb7j6gKkv0WIhh7mK8YkGuin1tSfKeevU\nY+EdkOjtx210K/p/Jqo9RDCh5C4YwMvZ4KqvZN4mytgUjBVCwjbu9rQXAoGAPkw/\nd8Ax/k+sE5z1dFRFeJw6R2+6Vsnaxo8KcjS94JycD1ZIcBXouZJ7L33051Diygn2\n6/KH8olnt5+g3gyOoLNIe19C+nCe2FB+DTxgOiDYrwLaRxHVCCDIOhDDWLOP4hYz\nWZoZt5n7eRQDsUeIDY4OjHaEwPaWuEyYuhjycCECgYBkTIyfwrfOOl7HcJZXG49L\nHXUqJczeAcvhzwrE2FNSfqpN9eoV+gJGMDtB2jFIAnb8bHLzUG8VTpLwwwXcA2eF\ncPBbWWqZhBU6GfwT56i19q6GokRB7oho4tesi6+571pIYExOW0vJhd7g5vvORIL3\nRQvjX7T/N6hPdcaCzhreBQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "outlook-360@optimal-relic-341015.iam.gserviceaccount.com",
+  "client_id": "117732293157771990660",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/outlook-360%40optimal-relic-341015.iam.gserviceaccount.com"
+}

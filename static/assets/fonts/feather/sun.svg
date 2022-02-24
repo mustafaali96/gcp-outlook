@@ -1,0 +1,15 @@
+<svg id="sun" xmlns="http://www.w3.org/2000/svg" width="41.535" height="41.535" viewBox="0 0 41.535 41.535">
+  <path id="Path_2059" data-name="Path 2059" d="M103.533,90.072a13.461,13.461,0,1,0,13.461,13.461,13.476,13.476,0,0,0-13.461-13.461Zm-1.218,17.556h2.436v2.434h-2.436ZM100.59,105.9l-1.721-1.721a6.589,6.589,0,0,1,9.327,0l-1.721,1.721a4.156,4.156,0,0,0-5.886,0Zm2.943-6.089a8.97,8.97,0,0,0-6.383,2.649l-1.721-1.721a11.449,11.449,0,0,1,16.208,0l-1.721,1.721A8.97,8.97,0,0,0,103.533,99.813Z" transform="translate(-82.765 -82.765)" fill="#1d9eff"/>
+  <path id="Path_2060" data-name="Path 2060" d="M241,0h2.434V4.873H241Z" transform="translate(-221.449)" fill="#1d9eff"/>
+  <path id="Path_2061" data-name="Path 2061" d="M0,0H2.434V4.873H0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 9.33, 3.391)" fill="#1d9eff"/>
+  <path id="Path_2062" data-name="Path 2062" d="M0,0H2.434V4.873H0Z" transform="matrix(0.5, -0.866, 0.866, 0.5, 2.174, 11.438)" fill="#1d9eff"/>
+  <path id="Path_2063" data-name="Path 2063" d="M0,241H4.873v2.434H0Z" transform="translate(0 -221.449)" fill="#1d9eff"/>
+  <path id="Path_2064" data-name="Path 2064" d="M0,0H4.873V2.434H0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 2.174, 30.097)" fill="#1d9eff"/>
+  <path id="Path_2065" data-name="Path 2065" d="M0,0H4.873V2.434H0Z" transform="matrix(0.5, -0.866, 0.866, 0.5, 9.329, 38.144)" fill="#1d9eff"/>
+  <path id="Path_2066" data-name="Path 2066" d="M241,451.928h2.434V456.8H241Z" transform="translate(-221.449 -415.266)" fill="#1d9eff"/>
+  <path id="Path_2067" data-name="Path 2067" d="M0,0H2.434V4.873H0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 27.66, 35.14)" fill="#1d9eff"/>
+  <path id="Path_2068" data-name="Path 2068" d="M0,0H2.434V4.873H0Z" transform="matrix(0.5, -0.866, 0.866, 0.5, 33.923, 29.769)" fill="#1d9eff"/>
+  <path id="Path_2069" data-name="Path 2069" d="M451.928,241H456.8v2.434h-4.873Z" transform="translate(-415.266 -221.449)" fill="#1d9eff"/>
+  <path id="Path_2070" data-name="Path 2070" d="M0,0H4.873V2.434H0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 33.923, 11.766)" fill="#1d9eff"/>
+  <path id="Path_2071" data-name="Path 2071" d="M0,0H4.873V2.434H0Z" transform="matrix(0.5, -0.866, 0.866, 0.5, 27.661, 6.395)" fill="#1d9eff"/>
+</svg>
